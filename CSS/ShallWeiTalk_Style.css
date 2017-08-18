@@ -1,0 +1,292 @@
+/*
+* @Author: Haut-Stone
+* @Date:   2017-08-16 16:58:11
+* @Last Modified by:   Haut-Stone
+* @Last Modified time: 2017-08-18 09:46:16
+*/
+
+/*图片的样式*/
+img {
+	border-radius: 4px;
+}
+
+.aligncenter {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*文章块的样式*/
+article {
+	background-color: #fff;
+	margin-top: 50px;
+	border-radius: 4px;
+	border: 1px solid #dbdbdb;
+}
+
+/*文章正文（不包括标题）*/
+.entry-content {
+    padding: 0px 40px 0px 40px;
+}
+
+.content-area .hentry {
+	position: relative;
+	padding-top: 0;
+	padding-bottom: 10px;
+}
+
+
+/*主页中单个文章的脚*/
+.entry-footer {
+	clear: left;
+	margin-top: 5px;
+}
+
+/*主页面先前文章*/
+.posts-navigation .nav-previous {
+    margin: 40px 0px 0px 0px;
+}
+
+
+/*前一篇文章按钮*/
+.comment-navigation .nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+    margin: 40px 0px 0px 40px;
+    width: 40%;
+}
+
+textarea#comment {
+    border-radius: 5px;
+}
+
+input#author {
+    border-radius: 5px;
+}
+
+input#email {
+    border-radius: 5px;
+}
+
+input#url {
+    border-radius: 5px;
+}
+
+a.tag-cloud-link {
+    border: 1px solid #eee;
+    background-color: #eee;
+}
+
+.nav-links.clearfix {
+    margin-bottom: 200px;
+}
+
+/*后一篇文章按钮*/
+.comment-navigation .nav-next, .posts-navigation .nav-next, .post-navigation .nav-next {
+    margin: 40px 40px 0px 0px;
+    width: 40%;
+}
+
+/*文章标题*/
+.hentry .title-post { 
+	padding-bottom: 5px;
+	margin: 0 15px;
+	border-bottom: none;
+}
+
+.entry-page p, .entry-post p {
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.hentry .meta-post {
+	margin: 0 15px;
+	margin-bottom: 5px;
+}
+
+
+/*博客文章中所有标题都有的样式*/
+h1, h2, h3, h4, h5, h6 {
+	color: #443f3f;
+	font-weight: 600;
+	margin: 0px;
+	line-height: 1.25;
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+
+h1.title-post.entry-title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+/*博客文章中的标题样式*/
+h1 {
+
+}
+
+h2 {
+	padding-bottom: 0.3em;
+    font-size: 1.5em;
+	border-bottom: 1px solid #eaecef;
+}
+
+h3 {
+	font-size: 1.25em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+/*有序无序列表*/
+ol, ul {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*单个段落的样式*/
+p {
+	margin: 0 0px 16px;
+    text-align: justify;
+    letter-spacing: 0.05em;
+}
+
+/*code {
+	background: #e8f2fb;
+    border: 1px solid #c9e1f6;
+}*/
+
+/*站点描述为空的时候的样式*/
+.site-description:empty {
+    margin: 0;
+    border-bottom: none;
+}
+
+/*代码块*/
+pre {
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    border-radius: 4px;
+    border:none;
+    margin: 15px 0px 15px 0px;
+}
+
+
+/*引用段落里面的段落元素*/
+blockquote ol:last-child, blockquote p:last-child, blockquote ul:last-child {
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+/*文章中块引用的样式*/
+.hentry blockquote {
+	background-color: #fff;
+	font-size: 15px;
+	font-style: normal;
+	color: #6a737d;
+	margin-bottom: 16px;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0 1em;
+	line-height: 1.5;
+	border-left: .25em solid #dfe2e5;
+}
+
+div#sidebar-footer {
+    padding-bottom: 5px;
+}
+
+
+/*页脚小工具*/
+.footer-widgets {
+    padding: 40px;
+    background-color: #252525;
+}
+
+#secondary, #secondary a, #secondary .widget-title {
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+#secondary {
+	background-color: RGBA(0, 0, 0, 0.00);
+}
+
+.entry-footer {
+    margin-left: 40px;
+}
+
+input.search-field {
+    border-radius: 5px;
+}
+
+aside#recent-posts-2 {
+    /*border: 1px solid #dbdbdb;*/
+    border-radius: 5px;
+    /*background-color: RGBA(0, 0, 0, 0.20);*/
+    background-color: #fff;
+    padding: 0px 20px 10px 20px;
+}
+
+aside#categories-2 {
+    /*background-color: RGBA(0, 0, 0, 0.20);*/
+    background-color: #fff;
+    /*border: 1px solid #dbdbdb;*/
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+aside#tag_cloud-3 {
+    border-radius: 5px;
+    /*background-color: RGBA(0, 0, 0, 0.20);*/
+    background-color: #fff;
+    /*border: 1px solid #dbdbdb;*/
+    padding: 10px 20px 10px 20px;
+}
+
+
+
+/*页脚*/
+.site-footer {
+    background-color: #1c1c1c;
+    line-height: 35px;
+    padding: 0px;
+}
+
+/*主页面的那一条多余的直线*/
+.content-area .hentry:after {
+    background-color: #d65050;
+	visibility: hidden;
+}
+
+.page-wrap .content-wrapper {
+    background-color: RGBA(0, 0, 0, 0.00);
+}
+
+/*代码块主题为**时的样式*/
+.crayon-theme-sublime-text {
+	border-radius: 6px;
+}
+
+.crayon-theme-solarized-light {
+    border-style: none; 
+    border-radius: 5px;
+}
+
+.crayon-theme-ado {
+    border-style: none !important; 
+}
+
