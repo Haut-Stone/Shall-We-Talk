@@ -2,7 +2,7 @@
 * @Author: Haut-Stone
 * @Date:   2017-08-16 16:58:11
 * @Last Modified by:   Haut-Stone
-* @Last Modified time: 2017-08-19 20:29:49
+* @Last Modified time: 2017-08-20 16:09:41
 */
 
 /*图片的样式*/
@@ -10,6 +10,7 @@ img {
 	border-radius: 4px;
 }
 
+/*居中的图片样式*/
 .aligncenter {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -34,6 +35,11 @@ article {
 	padding-bottom: 10px;
 }
 
+/*markdown里面的图片*/
+p img {
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+}
 
 /*主页中单个文章的脚*/
 .entry-footer {
@@ -53,6 +59,7 @@ article {
     width: 40%;
 }
 
+/*评论的样式*/
 textarea#comment {
     border-radius: 5px;
 }
@@ -69,6 +76,7 @@ input#url {
     border-radius: 5px;
 }
 
+/*标签的样式*/
 a.tag-cloud-link {
     /*border: 1px solid #eee;*/
     background-color: #fff;
@@ -76,13 +84,14 @@ a.tag-cloud-link {
     padding: 0px 2px 0px 2px;
 }
 
+/*友链的样式*/
 aside#text-8 {
     background-color: white;
     padding: 20px 20px 10px 20px;
     border-radius: 5px;
 }
 
-
+/*前后篇文章和评论区的距离*/
 .nav-links.clearfix {
     margin-bottom: 200px;
 }
@@ -100,6 +109,7 @@ aside#text-8 {
     margin-top: 30px;
 	border-bottom: none;
 }
+
 
 .entry-page p, .entry-post p {
     margin-bottom: 0;
@@ -215,6 +225,7 @@ blockquote ol:last-child, blockquote p:last-child, blockquote ul:last-child {
 	border-left: .25em solid #dfe2e5;
 }
 
+/*页脚*/
 div#sidebar-footer {
     padding-bottom: 5px;
 }
