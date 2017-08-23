@@ -24,7 +24,29 @@ response对象里不仅包含了服务器返回的所有信息，也包含了你
   <img src="对象属性">
 </div>
 
+上面的这几个属性都是平时比较常用的属性，多打几次记住名字自然就熟悉了，这里指出一些属性的作用，`r.content` 属性因为是文件的二进制形式，一般像保存文件的时候要用到这个属性。`encoding`是当网站的html文件里写有<charset>标签时，python得到的编码格式，表示程序员在写网站时就规定了网站的编码格式，而如果程序员没有规定编码格式的话，默认的值是ISO‐8859‐1。`apparent_encoding`是python根据网页内容分析出来的可能的编码格式，一般如果网站的内容无法正常显示的时候，可以用这里面推荐的编码格式，代替网站本身的编码格式。
 
+网页连接的错误情况很容易出现，在代码层面写出可以预防问题发生的健壮的代码是一个良好的习惯。这里列出了几种可能出现的异常种类
+
+<div align="center">
+  <img src="http异常">
+</div>
+
+为了预防以上异常的出现导致程序崩溃，我们要有一个通用的错误处理框架。在程序出现异常时处理异常，并抛出一个合理的提示信息。基本格式就像下面这个样子。
+
+```python
+import requests
+
+def get_http_text(url):
+	try:
+		r = requests.get(url, timeout = 3)
+		r.raise_for_status() # 返回不是200的话，制造一个异常
+		r.encoding = r.apparent_encoding
+		return r.text[:1000] # 一般网页返回的html都很长，所以切片其中的一部分返回
+	except:
+		return 'Something wrong!'
+
+```
 
 
 >本篇是学习中国大学mooc上的公开课后写下的总结
